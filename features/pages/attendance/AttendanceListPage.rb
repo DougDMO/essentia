@@ -1,0 +1,29 @@
+class AttendanceListPage < SitePrism::Page
+
+  set_url '/list-attendance'
+  element :replicar, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div[1]/app-attendance-record[1]/div[1]/div/button[1]'
+  element :delete, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div[1]/app-attendance-record[1]/div[1]/div/button[2]'
+  element :delete2, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[1]/div/button[2]'
+  element :expandir, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div[1]/app-attendance-record[1]/div[1]/div/button[3]'
+  element :expandir2, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div[1]/app-attendance-record[2]/div[1]/div/button[3]'
+  element :search, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[1]/div/div[1]/div/div[3]/div/input'
+  element :close_search, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[1]/div/div[1]/div/div[3]/div/mat-icon'
+
+  element :pdf_exames, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-exam-guide/app-patient-record-header/div/div/button[2]'
+  element :pdf_prescricao, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-prescription/app-patient-record-header/div/div/button[2]'
+  element :pdf_plano, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/sec-food-plan/app-patient-record-header/div/div/button[2]'
+  element :pdf_orientacao, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-orientation/app-patient-record-header/div/div/button[2]'
+  element :pdf_laudo, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-report/app-patient-record-header/div/div/button[2]'
+  element :pdf_atestado, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-statement/app-patient-record-header/div/div/button[2]'
+
+  element :email_pdf_exames, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-exam-guide/app-patient-record-header/div/div/button[1]'
+  element :email_pdf_prescricao, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-prescription/app-patient-record-header/div/div/button[1]'
+  element :email_pdf_plano, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/sec-food-plan/app-patient-record-header/div/div/button[1]'
+  element :email_pdf_orientacao, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-orientation/app-patient-record-header/div/div/button[1]'
+  element :email_pdf_laudo, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-report/app-patient-record-header/div/div/button[1]'
+  element :email_pdf_atestado, :xpath, '/html/body/fuse-root/fuse-main/mat-sidenav-container/mat-sidenav-content/div/div/div/fuse-content/app-patient-action/div/div[2]/ngb-tabset/div/div/app-patient-records/div/div/div[2]/div/app-attendance-record[1]/div[2]/app-statement/app-patient-record-header/div/div/button[1]'
+
+  element :observacao_attendance, :xpath, '/html/body/ngb-modal-window/div/div/app-pdf-sender/div[2]/form/div/div[3]/textarea'
+  element :send_email_attendance, :xpath, '/html/body/ngb-modal-window/div/div/app-pdf-sender/div[2]/form/div/div[4]/button'
+
+ end

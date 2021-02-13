@@ -1,0 +1,45 @@
+## Features
+login_user: --tags @login_user
+register: --tags @register
+clinic: --tags @clinic
+anamnese: --tags @anamnese
+anamnese_colab: --tags @anamnese_colab
+food: --tags @food
+recipe: --tags @recipe
+food_plan: --tags @food_plan
+attendance: --tags @attendance
+exams_guide: --tags @exams_guide
+exams_guide_colab: --tags @exams_guide_colab
+guidance: --tags @guidance
+guidance_colab: --tags @guidance_colab
+pre_appointment: --tags @pre_appointment
+pre_appointment_colab: --tags @pre_appointment_colab
+report: --tags @report
+report_colab: --tags @report_colab
+sick_note: --tags @sick_note
+sick_note_colab: --tags @sick_note_colab
+patient: --tags @patient
+patient_colab: --tags @patient_colab
+schedule: --tags @schedule
+schedule_colab: --tags @schedule_colab
+formulas: --tags @formulas
+injetaveis: --tags @injetaveis
+estoque: --tags @estoque
+print_layout: --tags @print_layout
+side-menu: --tags @side-menu
+side-menu_colab: --tags @side-menu_colab
+site_configuration: --tags @site_configuration
+schedule_config: --tags @schedule_config
+schedule_config_colab: --tags @schedule_config_colab
+support_easy: --tags @support_easy
+userprefer: --tags @userprefer
+employees: --tags @employees
+## Reports
+html_report: --format progress --format html --out=features_report.html
+json: --format json --out=report.json
+all: --tags @all -p json -p html_report
+smoke_test: --tags @smoke_test -p json -p html_report
+doing: --tags @doing
+## Groups
+failing: --tags @failing
+#doing: --tags @doing

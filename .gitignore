@@ -1,0 +1,7 @@
+Gemfile.lock
+.idea/
+.DS_Store
+features_report.html
+report.json
+.ruby-version
+debug.log
